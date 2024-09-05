@@ -3,7 +3,6 @@
 __debug_bin
 .scannerwork
 coverage.out
-token-service
 golangci-lint.xml
 report.json
 docs/
