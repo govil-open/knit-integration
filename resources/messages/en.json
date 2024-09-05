@@ -1,0 +1,18 @@
+[
+  {
+    "id": "required",
+    "translation": "is required"
+  },
+  {
+    "id": "unsupported",
+    "translation": "is unsupported"
+  },
+  {
+    "id": "validation_failed",
+    "translation": "validation failed"
+  },
+  {
+    "id": "server_error",
+    "translation": "server error, please contact tech team for further details"
+  }
+]
