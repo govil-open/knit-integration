@@ -4,10 +4,9 @@ import (
 	"encoding/json"
 	"golang-boiler-plate/api/knit"
 	"golang-boiler-plate/config"
+	"golang-boiler-plate/httpclient"
 	"golang-boiler-plate/logger"
 	"golang-boiler-plate/model"
-	"io"
-	"net/http"
 
 	"github.com/gin-gonic/gin"
 )
@@ -27,28 +26,19 @@ func NewKnitServiceImpl(c *config.AppConfig, logger *logger.Logger) *KnitService
 }
 
 func (s *KnitServiceImpl) GetPayroll(ctx *gin.Context) (model.Response, error) {
-	employeeId := ctx.Query("employeeId")
-	month := ctx.Query("month") //format - yyyy-mm
 
-	payrollAPI := knit.EMPLOYEE_PAYROLL.GetAPI()
-	url := payrollAPI + "?employeeId=" + employeeId + "&month=" + month
-
-	req, err := http.NewRequest("GET", url, nil)
-	if err != nil {
-		return model.Response{}, err
+	url := knit.EMPLOYEE_PAYROLL.GetAPI()
+	headers := map[string]string{
+		"accept":                "application/json",
+		"Authorization":         s.Conf.KnitAPIKey,
+		"X-Knit-Integration-Id": s.Conf.KnitIntegrationId,
+	}
+	params := map[string]string{
+		"employeeId": ctx.Query("employeeId"),
+		"month":      ctx.Query("month"),
 	}
 
-	req.Header.Add("accept", "application/json")
-	req.Header.Add("Authorization", s.Conf.KnitAPIKey)
-	req.Header.Add("X-Knit-Integration-Id", s.Conf.KnitIntegrationId)
-
-	res, err := http.DefaultClient.Do(req)
-	if err != nil {
-		return model.Response{}, err
-	}
-	defer res.Body.Close()
-
-	body, err := io.ReadAll(res.Body)
+	body, err := httpclient.Get(url, headers, params)
 	if err != nil {
 		return model.Response{}, err
 	}
