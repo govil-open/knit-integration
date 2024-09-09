@@ -18,6 +18,7 @@ const (
 
 const (
 	EMPLOYEE_PAYROLL KnitAPI = iota
+	LIST_ALL_LEAVE_TYPES
 	LEAVE_REQUEST
 	LEAVE_BALANCE
 	CREATE_LEAVE_REQUEST
@@ -47,6 +48,7 @@ var apis = [...]API{
 	{URL: "https://api.getknit.dev/v1.0/hr.employees.payroll.get", Type: GET},
 
 	//Leave APIs
+	{URL: "https://api.getknit.dev/v1.0/hr.leave.types", Type: GET},
 	{URL: "https://api.getknit.dev/v1.0/hr.employees.leave.requests", Type: GET},
 	{URL: "https://api.getknit.dev/v1.0/hr.employees.leave.balance", Type: GET},
 	{URL: "https://api.getknit.dev/v1.0/hr.employees.leave.create", Type: POST},
