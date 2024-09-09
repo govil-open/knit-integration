@@ -1,21 +1,24 @@
 package model
 
-import "time"
+import (
+	"knit-integration/model/enum"
+	"time"
+)
 
 type LeaveTypeEnum string
 type IsEligible string
 
 type LeaveRequest struct {
-	ID          string    `json:"id"`
-	StartDate   time.Time `json:"startDate"`
-	EndDate     time.Time `json:"endDate"`
-	RequestedOn time.Time `json:"requestedOn"`
-	Note        string    `json:"note"`
-	Status      Status    `json:"status"`
-	LeaveType   LeaveType `json:"leaveType"`
-	Unit        Unit      `json:"unit"`
-	Amount      float64   `json:"amount"`
-	IsPaid      IsPaid    `json:"isPaid"`
+	ID          string      `json:"id"`
+	StartDate   time.Time   `json:"startDate"`
+	EndDate     time.Time   `json:"endDate"`
+	RequestedOn time.Time   `json:"requestedOn"`
+	Note        string      `json:"note"`
+	Status      enum.Status `json:"status"`
+	LeaveType   LeaveType   `json:"leaveType"`
+	Unit        enum.Unit   `json:"unit"`
+	Amount      float64     `json:"amount"`
+	IsPaid      enum.IsPaid `json:"isPaid"`
 }
 
 const (
@@ -28,21 +31,19 @@ const (
 	LEAVE_NOT_SPECIFIED LeaveTypeEnum = "NOT_SPECIFIED"
 )
 
-// This struct can be constructed as an enum with multiple values
-// Once we have clarity we can re-struct this one.
 type LeaveType struct {
-	ID   string
-	Name string
-	Type LeaveTypeEnum
+	ID   string        `json:"id"`
+	Name string        `json:"name"`
+	Type LeaveTypeEnum `json:"type"`
 }
 
 type LeaveBalance struct {
-	LeaveType  LeaveType  `json:"leaveType"`
-	Unit       Unit       `json:"unit"`
-	Balance    float64    `json:"balance"`
-	LeaveUsed  float64    `json:"used"`
-	IsPaid     IsPaid     `json:"isPaid"`
-	IsEligible IsEligible `json:"isEligible"`
+	LeaveType  LeaveType   `json:"leaveType"`
+	Unit       enum.Unit   `json:"unit"`
+	Balance    float64     `json:"balance"`
+	LeaveUsed  float64     `json:"used"`
+	IsPaid     enum.IsPaid `json:"isPaid"`
+	IsEligible IsEligible  `json:"isEligible"`
 }
 
 const (
