@@ -1,10 +1,10 @@
 package server
 
 import (
-	"golang-boiler-plate/config"
-	"golang-boiler-plate/db"
-	"golang-boiler-plate/logger"
-	"golang-boiler-plate/middleware"
+	"knit-integration/config"
+	"knit-integration/db"
+	"knit-integration/logger"
+	"knit-integration/middleware"
 	"reflect"
 	"strings"
 

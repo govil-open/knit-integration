@@ -1,7 +1,7 @@
 package middleware
 
 import (
-	"golang-boiler-plate/config"
+	"knit-integration/config"
 
 	"github.com/gin-gonic/gin"
 )

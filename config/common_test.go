@@ -1,7 +1,7 @@
 package config
 
 import (
-	"golang-boiler-plate/logger"
+	"knit-integration/logger"
 	"testing"
 
 	"github.com/stretchr/testify/require"

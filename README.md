@@ -1,4 +1,4 @@
-# golang-boiler-plate
+# knit-integration
 
 Aim of this project is to provide a base code structure for developing any new microservice. You only need to focus on actual business logic implementation as all other boiler plate code implementation is taken care of.
 

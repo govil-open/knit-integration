@@ -1,12 +1,12 @@
 package server
 
 import (
-	"golang-boiler-plate/config"
-	"golang-boiler-plate/controller"
-	"golang-boiler-plate/db"
-	"golang-boiler-plate/logger"
-	"golang-boiler-plate/middleware"
-	"golang-boiler-plate/service"
+	"knit-integration/config"
+	"knit-integration/controller"
+	"knit-integration/db"
+	"knit-integration/logger"
+	"knit-integration/middleware"
+	"knit-integration/service"
 
 	"github.com/gin-gonic/gin"
 )

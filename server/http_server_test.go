@@ -1,9 +1,9 @@
 package server
 
 import (
-	"golang-boiler-plate/config"
-	"golang-boiler-plate/db/mock"
-	"golang-boiler-plate/logger"
+	"knit-integration/config"
+	"knit-integration/db/mock"
+	"knit-integration/logger"
 	"testing"
 
 	"github.com/golang/mock/gomock"

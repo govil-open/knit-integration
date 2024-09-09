@@ -1,8 +1,8 @@
 package controller
 
 import (
-	"golang-boiler-plate/config"
-	"golang-boiler-plate/service"
+	"knit-integration/config"
+	"knit-integration/service"
 	"net/http"
 
 	"github.com/gin-gonic/gin"

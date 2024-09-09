@@ -3,7 +3,7 @@ package middleware
 import (
 	"errors"
 	"fmt"
-	"golang-boiler-plate/config"
+	"knit-integration/config"
 
 	"github.com/go-playground/validator/v10"
 	"github.com/nicksnyder/go-i18n/v2/i18n"

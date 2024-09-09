@@ -2,9 +2,9 @@ package controller
 
 import (
 	"bytes"
-	"golang-boiler-plate/config"
-	mockdb "golang-boiler-plate/db/mock"
-	"golang-boiler-plate/service"
+	"knit-integration/config"
+	mockdb "knit-integration/db/mock"
+	"knit-integration/service"
 	"net/http"
 	"net/http/httptest"
 	"testing"

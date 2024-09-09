@@ -3,7 +3,7 @@ package logger
 import (
 	"testing"
 
-	"golang-boiler-plate/model"
+	"knit-integration/model"
 
 	"github.com/stretchr/testify/require"
 )

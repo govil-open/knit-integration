@@ -2,7 +2,7 @@ package controller
 
 import (
 	"encoding/json"
-	"golang-boiler-plate/model"
+	"knit-integration/model"
 )
 
 func createDummyAuthMap() map[string]any {

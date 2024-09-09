@@ -1,9 +1,9 @@
 package test
 
 import (
-	"golang-boiler-plate/config"
-	"golang-boiler-plate/logger"
-	"golang-boiler-plate/server"
+	"knit-integration/config"
+	"knit-integration/logger"
+	"knit-integration/server"
 	"log"
 	"os"
 	"testing"

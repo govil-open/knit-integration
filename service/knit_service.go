@@ -2,11 +2,11 @@ package service
 
 import (
 	"encoding/json"
-	"golang-boiler-plate/api/knit"
-	"golang-boiler-plate/config"
-	"golang-boiler-plate/httpclient"
-	"golang-boiler-plate/logger"
-	"golang-boiler-plate/model"
+	"knit-integration/api/knit"
+	"knit-integration/config"
+	"knit-integration/httpclient"
+	"knit-integration/logger"
+	"knit-integration/model"
 
 	"github.com/gin-gonic/gin"
 )

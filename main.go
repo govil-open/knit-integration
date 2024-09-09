@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"golang-boiler-plate/api/knit"
-	"golang-boiler-plate/config"
-	"golang-boiler-plate/logger"
-	"golang-boiler-plate/server"
+	"knit-integration/api/knit"
+	"knit-integration/config"
+	"knit-integration/logger"
+	"knit-integration/server"
 	"os"
 
 	log "github.com/sirupsen/logrus"

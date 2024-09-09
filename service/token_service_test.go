@@ -2,11 +2,11 @@ package service
 
 import (
 	"errors"
-	"golang-boiler-plate/config"
-	store "golang-boiler-plate/db"
-	mockdb "golang-boiler-plate/db/mock"
-	"golang-boiler-plate/logger"
-	"golang-boiler-plate/model"
+	"knit-integration/config"
+	store "knit-integration/db"
+	mockdb "knit-integration/db/mock"
+	"knit-integration/logger"
+	"knit-integration/model"
 	"testing"
 
 	"github.com/gin-gonic/gin"

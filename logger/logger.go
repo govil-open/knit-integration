@@ -3,7 +3,7 @@ package logger
 import (
 	"os"
 
-	"golang-boiler-plate/model"
+	"knit-integration/model"
 
 	log "github.com/sirupsen/logrus"
 )

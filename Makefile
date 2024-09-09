@@ -17,7 +17,7 @@ sqlc:
 	sqlc generate
 
 mock:
-	mockgen -package mock -destination db/mock/store.go golang-boiler-plate/db Store
+	mockgen -package mock -destination db/mock/store.go knit-integration/db Store
 
 migrate:
 	migrate create -ext sql -dir db/migration -seq ${FILE_NAME}

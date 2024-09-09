@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"golang-boiler-plate/config"
+	"knit-integration/config"
 	"net/http/httptest"
 	"testing"
 

@@ -1,4 +1,4 @@
-module golang-boiler-plate
+module knit-integration
 
 go 1.23
 
@@ -10,7 +10,6 @@ require (
 	github.com/google/uuid v1.3.0
 	github.com/lib/pq v1.10.6
 	github.com/newrelic/go-agent/v3 v3.20.1
-	github.com/newrelic/go-agent/v3/integrations/nrgin v1.1.3
 	github.com/nicksnyder/go-i18n/v2 v2.2.0
 	github.com/sirupsen/logrus v1.8.1
 	github.com/spf13/viper v1.12.0

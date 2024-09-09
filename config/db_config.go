@@ -3,7 +3,7 @@ package config
 import (
 	"database/sql"
 	"errors"
-	"golang-boiler-plate/db"
+	"knit-integration/db"
 	"time"
 
 	"github.com/golang-migrate/migrate/v4"

@@ -2,7 +2,7 @@ package db
 
 import (
 	"database/sql"
-	db "golang-boiler-plate/db/sqlc"
+	db "knit-integration/db/sqlc"
 )
 
 // Store defines all functions to execute db queries and transactions.

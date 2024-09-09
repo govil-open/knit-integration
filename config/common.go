@@ -1,7 +1,7 @@
 package config
 
 import (
-	"golang-boiler-plate/logger"
+	"knit-integration/logger"
 
 	"github.com/evalphobia/logrus_sentry"
 	log "github.com/sirupsen/logrus"

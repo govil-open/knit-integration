@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"strings"
 
-	"golang-boiler-plate/config"
-	"golang-boiler-plate/logger"
-	"golang-boiler-plate/util"
+	"knit-integration/config"
+	"knit-integration/logger"
+	"knit-integration/util"
 
 	"github.com/gin-gonic/gin"
 	"github.com/nicksnyder/go-i18n/v2/i18n"

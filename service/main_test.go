@@ -1,8 +1,8 @@
 package service
 
 import (
-	"golang-boiler-plate/config"
-	"golang-boiler-plate/logger"
+	"knit-integration/config"
+	"knit-integration/logger"
 	"log"
 	"os"
 	"testing"

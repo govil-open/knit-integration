@@ -8,9 +8,9 @@ import (
 	"net/http"
 	"time"
 
-	"golang-boiler-plate/config"
-	"golang-boiler-plate/logger"
-	"golang-boiler-plate/model"
+	"knit-integration/config"
+	"knit-integration/logger"
+	"knit-integration/model"
 
 	"github.com/gin-gonic/gin"
 )

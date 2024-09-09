@@ -1,9 +1,9 @@
 package controller
 
 import (
-	"golang-boiler-plate/config"
-	"golang-boiler-plate/middleware"
-	"golang-boiler-plate/model"
+	"knit-integration/config"
+	"knit-integration/middleware"
+	"knit-integration/model"
 
 	"github.com/gin-gonic/gin"
 	"github.com/nicksnyder/go-i18n/v2/i18n"

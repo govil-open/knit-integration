@@ -1,12 +1,12 @@
 package service
 
 import (
-	"golang-boiler-plate/config"
-	store "golang-boiler-plate/db"
-	db "golang-boiler-plate/db/sqlc"
-	"golang-boiler-plate/logger"
-	"golang-boiler-plate/model"
-	"golang-boiler-plate/util"
+	"knit-integration/config"
+	store "knit-integration/db"
+	db "knit-integration/db/sqlc"
+	"knit-integration/logger"
+	"knit-integration/model"
+	"knit-integration/util"
 
 	"github.com/gin-gonic/gin"
 )
